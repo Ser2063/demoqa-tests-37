@@ -1,0 +1,19 @@
+//указываем какой язык программирования используем
+
+plugins {
+    id 'java-library'
+}
+
+//указываем что используем центральный прокси репозитарий для скачивания библиотек и зависимостей
+
+repositories {
+    mavenCentral()
+}
+
+// добавляем селинид
+
+dependencies {
+    testImplementation(
+            "com.codeborne:selenide:7.0.0"
+    )
+}
